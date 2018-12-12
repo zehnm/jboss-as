@@ -1,13 +1,13 @@
 # JBoss Application Server Docker image
 
-This is an example Dockerfile with the legacy [JBoss application server 6.1.0.Final](http://jbossas.jboss.org/) based on the [WildFly Dockerfile from Red Hat](https://github.com/jboss-dockerfiles/wildfly).
+This is an example Dockerfile with the legacy [JBoss application server](http://jbossas.jboss.org/) 6.1.0.Final based on the [WildFly Dockerfile from Red Hat](https://github.com/jboss-dockerfiles/wildfly).
 This Dockerfile has been created to support a legacy JBoss AS migration to Wildfly. 
 
 ## Usage
 
-To boot in standalone mode
+To boot in default server mode and exposing port 8080:
 
-    docker run -it --name jboss-as zehnm/jboss-as
+    docker run -it -p 127.0.0.1:8080:8080/tcp --name jboss-as zehnm/jboss-as
 
 ## Application deployment
 
